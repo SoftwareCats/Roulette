@@ -16,7 +16,11 @@
 
 package io.github.softwarecats.roulette.player;
 
-import io.github.softwarecats.roulette.*;
+import io.github.softwarecats.casino.event.Outcome;
+import io.github.softwarecats.roulette.Bet;
+import io.github.softwarecats.roulette.Game;
+import io.github.softwarecats.roulette.InvalidBetException;
+import io.github.softwarecats.roulette.Table;
 
 import java.util.ArrayList;
 import java.util.List;

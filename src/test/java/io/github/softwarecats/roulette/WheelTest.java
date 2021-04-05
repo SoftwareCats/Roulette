@@ -16,6 +16,7 @@
 
 package io.github.softwarecats.roulette;
 
+import io.github.softwarecats.casino.event.Outcome;
 import org.junit.Before;
 import org.junit.Test;
 

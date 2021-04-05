@@ -16,6 +16,7 @@
 
 package io.github.softwarecats.roulette;
 
+import io.github.softwarecats.casino.event.Outcome;
 import io.github.softwarecats.roulette.player.Player;
 
 import java.util.Objects;
@@ -65,7 +66,7 @@ public class Bet {
      * @return amount won
      */
     public int winAmount() {
-        return amountBet + outcome.winAmount(amountBet);
+        return amountBet + outcome.winAmount(amountBet).intValue();
     }
 
     /**

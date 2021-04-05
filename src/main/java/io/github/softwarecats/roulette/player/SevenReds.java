@@ -16,9 +16,9 @@
 
 package io.github.softwarecats.roulette.player;
 
+import io.github.softwarecats.casino.event.Outcome;
 import io.github.softwarecats.roulette.Game;
 import io.github.softwarecats.roulette.InvalidBetException;
-import io.github.softwarecats.roulette.Outcome;
 import io.github.softwarecats.roulette.Table;
 
 import java.util.Set;

@@ -16,6 +16,8 @@
 
 package io.github.softwarecats.roulette;
 
+import io.github.softwarecats.casino.event.Outcome;
+
 import java.util.*;
 
 /**

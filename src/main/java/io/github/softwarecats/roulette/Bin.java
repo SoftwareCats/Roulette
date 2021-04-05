@@ -16,9 +16,10 @@
 
 package io.github.softwarecats.roulette;
 
-import java.util.Arrays;
+import io.github.softwarecats.casino.event.Outcome;
+import io.github.softwarecats.casino.event.RandomEvent;
+
 import java.util.Collection;
-import java.util.HashSet;
 
 /**
  * Bin contains a collection of Outcomes which reflect the winning bets that are paid for a particular bin on a Roulette
@@ -27,7 +28,7 @@ import java.util.HashSet;
  * “Split 1-4” , “Street 1-2-3” , “Corner 1-2-4-5” , “Five Bet” , “Line 1-2-3-4-5-6” , “00-0-1-2-3” , “Dozen 1” , “Low”
  * and “Column 1” . These are collected into a single Bin .
  */
-public class Bin extends HashSet<Outcome> {
+public class Bin extends RandomEvent {
 
     /**
      * Instantiates an empty Bin. Outcomes can be added to it later.
@@ -43,7 +44,7 @@ public class Bin extends HashSet<Outcome> {
      * @param outcomes a primitive array of outcomes
      */
     public Bin(Outcome[] outcomes) {
-        super(Arrays.asList(outcomes));
+        super(outcomes);
     }
 
     /**
@@ -80,5 +81,4 @@ public class Bin extends HashSet<Outcome> {
     public String toString() {
         return super.toString();
     }
-
 }

@@ -16,7 +16,11 @@
 
 package io.github.softwarecats.roulette.player;
 
-import io.github.softwarecats.roulette.*;
+import io.github.softwarecats.casino.event.Outcome;
+import io.github.softwarecats.roulette.Bet;
+import io.github.softwarecats.roulette.BinBuilder;
+import io.github.softwarecats.roulette.Table;
+import io.github.softwarecats.roulette.Wheel;
 import org.junit.Before;
 import org.junit.Test;
 

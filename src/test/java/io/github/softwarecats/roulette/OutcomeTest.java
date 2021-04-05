@@ -16,6 +16,7 @@
 
 package io.github.softwarecats.roulette;
 
+import io.github.softwarecats.casino.event.Outcome;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -27,7 +28,7 @@ public class OutcomeTest {
     public void winAmount() {
         Outcome outcome = new Outcome("Name", 2);
 
-        assertEquals(4, outcome.winAmount(2));
+        assertEquals(4, outcome.winAmount(2).intValue());
     }
 
     @Test

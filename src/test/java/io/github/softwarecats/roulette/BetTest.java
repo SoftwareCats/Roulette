@@ -16,6 +16,7 @@
 
 package io.github.softwarecats.roulette;
 
+import io.github.softwarecats.casino.event.Outcome;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
